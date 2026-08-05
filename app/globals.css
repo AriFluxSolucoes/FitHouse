@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  /* Fit House — minimal black & white system */
+  --ink:      #0a0a0a;
+  --ink-soft: #4d4d4d;
+  --line:     #111111;
+  --hair:     #e2e2e2;
+  --hair-soft:#eeeeee;
+  --paper:    #ffffff;
+  --fog:      #f6f6f6;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-hair: var(--hair);
+  --color-hair-soft: var(--hair-soft);
+  --color-paper: var(--paper);
+  --color-fog: var(--fog);
+
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-archivo-black);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* thin scrollbar for horizontally-scrolling rails */
+.rail::-webkit-scrollbar {
+  height: 6px;
+}
+.rail::-webkit-scrollbar-thumb {
+  background: var(--hair);
+  border-radius: 999px;
+}
+.rail {
+  scrollbar-width: thin;
+  scrollbar-color: var(--hair) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
