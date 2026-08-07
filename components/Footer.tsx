@@ -15,9 +15,7 @@ const columns = [
     title: "Sobre a Fit House",
     links: [
       { label: "Quem somos", href: "/sobre/quem-somos" },
-      { label: "Trabalhe conosco", href: "/sobre/trabalhe-conosco" },
       { label: "Sustentabilidade", href: "/sobre/sustentabilidade" },
-      { label: "Imprensa", href: "/sobre/imprensa" },
     ],
   },
   {

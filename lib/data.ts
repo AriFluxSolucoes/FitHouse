@@ -8,7 +8,6 @@ export const navLinks = [
   "Mochilas",
   "Treino",
   "Macacão",
-  "Academia",
 ];
 
 export const circleCategories = [
@@ -98,23 +97,23 @@ export const products: Product[] = [
     category: ["conjuntos", "feminino", "treino"],
   },
   
-  { id: "p10", name: "Macacão fitness manga longa", price: 159.9, originalPrice: 219.9, rating: 4.7, reviews: 203, image: "https://dlkmodas.fbitsstatic.net/img/p/macacao-fitness-feminino-marrom-canelado-com-bojo-seamless-dlk-84064/310374.jpg?w=1000&h=1428&v=202501291307",
-    description: "Macacão fitness de manga longa em tecido canelado seamless, com bojo removível e modelagem que valoriza o corpo. Ótimo para treinos em dias mais frios ou para compor um look esportivo.",
+  { id: "p10", name: "Macacão fitness", price: 159.9, originalPrice: 219.9, rating: 4.7, reviews: 203, image: "https://dlkmodas.fbitsstatic.net/img/p/macacao-fitness-feminino-marrom-canelado-com-bojo-seamless-dlk-84064/310374.jpg?w=1000&h=1428&v=202501291307",
+    description: "Macacão fitness em tecido canelado seamless, com bojo removível e modelagem que valoriza o corpo. Ótimo para treinos em dias mais frios ou para compor um look esportivo.",
     reviewList: defaultReviews,
-    category: ["conjuntos", "feminino", "inverno"],
+    category: ["feminino", "inverno", "macacao"],
   },
   
   { id: "p3", name: "Conjunto top + Legging", price: 119.9, originalPrice: 149.9, rating: 4.5, reviews: 1204, colors: 4, image: "https://cdn1.ozone.ru/s3/multimedia-g/c600/6238812064.jpg",
-    description: "Short esportivo com tela respirável nas laterais para maior ventilação durante o treino. Cós elástico confortável, tecido leve de secagem rápida e bolso interno para pequenos objetos.",
+    description: "Conjunto esportivo com tela respirável nas laterais para maior ventilação durante o treino. Cós elástico confortável, tecido leve de secagem rápida e bolso interno para pequenos objetos.",
     reviewList: defaultReviews,
-    category: ["shorts", "treino", "feminino", "masculino"],
+    category: ["treino", "feminino", "conjuntos"],
   },
   
 
   { id: "p4", name: "Conjunto top + Saia", price: 54.9, rating: 4.3, reviews: 567, colors: 5, image: "https://http2.mlstatic.com/D_NQ_NP_767339-MLB85119717342_052025-O-3-conjunto-academia-top-com-ziper-e-bojo-e-short-saia-babado.webp",
     description: "Top cropped modelo nadador com boa sustentação, ideal para treinos de alto impacto. Alças largas e reguláveis, tecido com proteção UV e toque seco mesmo durante o suor intenso.",
     reviewList: defaultReviews,
-    category: ["tops", "feminino", "treino"],
+    category: ["tops", "feminino", "treino", "conjuntos"],
   },
  
 
@@ -133,7 +132,7 @@ export const products: Product[] = [
   { id: "p9", name: "Camiseta básica algodão", price: 44.9, rating: 4.2, reviews: 1502, colors: 6, image: "https://tse1.mm.bing.net/th/id/OIP.c7HxIZTOrhPJ1NIDJTqYqwHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     description: "Camiseta básica 100% algodão, macia e confortável para o dia a dia. Corte reto, gola careca reforçada e tecido de alta durabilidade que mantém a cor após várias lavagens.",
     reviewList: defaultReviews,
-    category: ["masculino", "feminino"],
+    category: ["masculino", "camisetas", "treino"],
   },
 
    {
@@ -147,7 +146,7 @@ export const products: Product[] = [
     description:
       "Camiseta oversized em tecido leve e respirável, corte solto e moderno. Boa opção tanto para treino quanto para o dia a dia.",
     reviewList: defaultReviews,
-    category: ["masculino", "treino"],
+    category: ["masculino", "treino", "camisetas"],
     isNew: true,
   },
   
@@ -163,7 +162,7 @@ export const products: Product[] = [
     description:
       "Camiseta termica,, proteção UV 50, ideal para atividades ao ar livre. Tecido leve e respirável que mantém a temperatura do corpo estável, mesmo sob sol intenso.",
     reviewList: defaultReviews,
-    category: ["Camiseta", "masculino", "treino"],
+    category: ["camisetas", "masculino", "treino"],
     isNew: true,
   },
  
@@ -232,7 +231,7 @@ export const products: Product[] = [
     description:
       "Mochila esportiva com compartimento térmico, bolso para tênis separado e tecido impermeável. Alças acolchoadas para maior conforto no dia a dia.",
     reviewList: defaultReviews,
-    category: ["acessorios", "treino"],
+    category: ["acessorios", "treino", "mochilas"],
     isNew: true,
   },
 
@@ -261,7 +260,7 @@ export const products: Product[] = [
     description:
       "Casaco fitness plus size com forro térmico leve e punhos ajustáveis. Corte pensado para liberdade de movimento sem perder o caimento.",
     reviewList: defaultReviews,
-    category: ["plus-size", "inverno", "feminino"],
+    category: ["plus-size", "inverno", "feminino", "casacos"],
   },
   {
     id: "p22",
